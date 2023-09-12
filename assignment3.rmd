@@ -29,7 +29,7 @@ $$=c_2\frac{1}{N}\sum_{i=1}^Nx_i=c_2\bar{x}$$
 ### $S^2_y$ Proof
 $$S^2_x=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2$$
 $$S^2_y=\frac{1}{n-1}\sum_{i=1}^n(c_2x_i-c_2\bar{x})^2$$
-$$=\frac{1}{n-1}\sum_{i=1}^n\{c_2(x_i-\bar{x})\}^2=c_2S^2_x$$
+$$=\frac{1}{n-1}\sum_{i=1}^n\{c_2(x_i-\bar{x})\}^2=c_2^2S^2_x$$
 
 6. 
 $$\bar{C}=\frac{5}{9}\bar{F}-32=18.244$$
