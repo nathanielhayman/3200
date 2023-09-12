@@ -1,0 +1,20 @@
+---
+author: "Nathaniel Hayman"
+date: "09-05-2023"
+output: html_document
+---
+
+## Flu Scatter
+
+```r
+plot(flu$Age, flu$Health.Aware, main="How Does Age Affect a Person's Health Awareness?", xlab="Age", ylab="Health Awareness Index", pch=25, col=c("red", "blue")[as.factor(flu$Shot)])
+
+legend(x=28, y=40, pch=25, col=c("red", "blue"), legend=c("No flu shot", "flu shot"))
+```
+---
+
+## Flu Bar
+
+```r
+barplot(table(flu$Shot)/50, ylab="Proportion", main="Bar Graph for Flu Shot", ylim=c(0,0.6), names.arg=c("No flu shot", "flu shot"))
+```

@@ -1,0 +1,18 @@
+## Exercise 1
+
+```r
+matrix <- c((2, 1, 6, 5, 2, 7, 3, 4, 0), 3, 3)
+sum(matrix[1,])
+sum(matrix[2,])
+sum(matrix[3,])
+sum(matrix[,1])
+sum(matrix[,2])
+sum(matrix[,3])
+matrix %*% t(matrix)
+```
+
+## Exercise 2
+```r
+library(MASS)
+plot(Bostson$nox, Boston$rad)
+```

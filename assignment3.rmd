@@ -1,0 +1,69 @@
+---
+author: "Nathaniel Hayman"
+date: "09-05-2023"
+output: html_document
+---
+
+1. $\mu_X=3.5$
+   $\sigma^2_X=2.91$
+2. $\mu_X=3.24$ ($\Delta\mu_X=0.26$)
+   $\sigma^2_X=3.11$ ($\Delta\sigma^2_X=0.2$)
+3. They are reasonably close to $1/6$ ($\plusmn0.08$)
+4. 
+### $\bar{y}$ Proof
+$$\bar{x}=\frac{1}{N}\sum_{i=1}^Nx_i$$
+$$\bar{y}=\frac{1}{N}\sum_{i=1}^Nc_1+x_i$$
+$$=c_1+\frac{1}{N}\sum_{i=1}^Nx_i=c_1+\bar{x}$$
+
+### $S^2_y$ Proof
+$$S^2_x=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2$$
+$$S^2_y=\frac{1}{n-1}\sum_{i=1}^n\{x_i+c_1-(\bar{x}+c_1)\}^2$$
+$$=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2=S^2_x$$
+
+5.
+### $\bar{y}$ Proof
+$$\bar{x}=\frac{1}{N}\sum_{i=1}^Nx_i$$
+$$\bar{y}=\frac{1}{N}\sum_{i=1}^Nc_2x_i$$
+$$=c_2\frac{1}{N}\sum_{i=1}^Nx_i=c_2\bar{x}$$
+
+### $S^2_y$ Proof
+$$S^2_x=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2$$
+$$S^2_y=\frac{1}{n-1}\sum_{i=1}^n(c_2x_i-c_2\bar{x})^2$$
+$$=\frac{1}{n-1}\sum_{i=1}^n\{c_2(x_i-\bar{x})\}^2=c_2S^2_x$$
+
+6. 
+$$\bar{C}=\frac{5}{9}\bar{F}-32=18.244$$
+$$S^2_C=\frac{5}{9}S^2_F=3.056$$
+
+7. 
+```r
+> temps <- c(91, 88, 93, 94, 96, 85, 89, 91, 98, 92, 93, 97, 95, 80, 82, 83)
+> mean(temps)
+[1] 90.4375
+> sd(temps)
+[1] 5.501136
+   ```
+
+8.
+```r
+> summary(faithful)
+   eruptions        waiting    
+ Min.   :1.600   Min.   :43.0  
+ 1st Qu.:2.163   1st Qu.:58.0  
+ Median :4.000   Median :76.0  
+ Mean   :3.488   Mean   :70.9  
+ 3rd Qu.:4.454   3rd Qu.:82.0  
+ Max.   :5.100   Max.   :96.0 
+```
+9. 
+```r
+> f_iqr <- 82-58
+> 58-f_iqr
+[1] 34
+> 82+f_iqr
+[1] 106
+```
+(no outliers since `max(faithful$waiting)=96.0` and `min(faithful$waiting)=43.0`)
+
+10. $\empty$
+11. Minimum and Maximum
