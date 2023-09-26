@@ -1,0 +1,19 @@
+---
+author: "Nathaniel Hayman"
+date: "09-19-2023"
+output: html_document
+---
+
+2. b) How many paths going from the lower left corner to the upper right corner of this
+grid and passing through the circled point are there?
+
+$$
+{5 \choose 3}{3 \choose 2}=30
+$$
+
+c) If a path is selected at random, what is the probability it will pass through the
+circled point?
+
+$$
+\frac{{5 \choose 3}{3 \choose 2}}{{8 \choose 4}}=0.429
+$$
