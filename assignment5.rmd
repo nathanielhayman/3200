@@ -4,7 +4,8 @@ date: "09-26-2023"
 output: html_document
 ---
 
-3. a)
+3. 
+a)
 $$
 k(0.2+0.3+0.4+0.2)=1, k=\frac{1}{1.1}
 $$
@@ -20,11 +21,22 @@ F(x)=\begin{cases}
 \end{cases}
 $$
 
-4. a)
+4.
+a)
 $$
 f(x)=\frac{d}{dx}F(x)=\begin{cases}
     0, & x \leq 0\\
     \frac{1}{2}x, & 0 < x < 2\\
     0, & x \geq 2
 \end{cases}
+$$
+
+b)
+$$
+\begin{aligned}
+P(0.5 < X < 1) &= F(1)-F(0.5)\\
+&=\frac{1}{4}x^2|_{x=1}-\frac{1}{4}x^2|_{x=0.5}\\
+&=\frac{1}{4}-\frac{1}{16}\\
+&=\frac{3}{16}  
+\end{aligned}
 $$
