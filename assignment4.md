@@ -1,0 +1,30 @@
+---
+author: "Nathaniel Hayman"
+date: "09-26-2023"
+output: html_document
+---
+
+3. a)
+$$
+k(0.2+0.3+0.4+0.2)=1, k=\frac{1}{1.1}
+$$
+
+b)
+$$
+F(x)=\begin{cases}
+    0, & X < 0\\
+    \frac{0.2}{1.1}, & 0 \leq X < 1\\
+    \frac{0.5}{1.1}, & 1 \leq x < 2\\
+    \frac{0.9}{1.1}, & 2 \leq x < 3\\
+    1, & x \geq 3\\
+\end{cases}
+$$
+
+4. a)
+$$
+f(x)=\frac{d}{dx}F(x)=\begin{cases}
+    0, & x \leq 0\\
+    \frac{1}{2}x, & 0 < x < 2\\
+    0, & x \geq 2
+\end{cases}
+$$
