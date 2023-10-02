@@ -48,3 +48,4 @@ $$
   $$
     P(X>s+t|X>s)=P(X>t)
   $$
+    where $s$ represents the time already spent, and $t$ represents the future time
