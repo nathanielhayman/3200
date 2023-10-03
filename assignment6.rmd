@@ -1,0 +1,67 @@
+---
+author: "Nathaniel Hayman"
+date: "09-26-2023"
+output: html_document
+---
+
+1. a
+$$
+E(X)=\int_{0}^1x\cdot3x^2dx=
+$$
+
+$$
+\sigma_X^2=E(X^2)-E(X)^2=3/5-(3/4)^2=
+$$
+
+2. 
+a)
+$$
+E(X)=\int_{0}^1\theta x^{\theta}dx=\frac{\theta x^{\theta+1}}{\theta+1}=\frac{\theta}{\theta+1}
+$$
+
+b)
+$$
+E(X)=\int_{0}^x\theta t^{\theta+1}dt=x^\theta
+$$
+
+c)
+$$
+x_{Q3}^\theta=0.75\\
+x_{Q3}=0.75^{1/\theta}\\
+x_{Q1}^\theta=0.25\\
+x_{Q1}=0.25^{1/\theta}\\
+IQR=x_{Q1}-x_{Q3}=0.75^{1/\theta}-0.25^{1/\theta}
+$$
+
+3. 
+a) Hypergeometric
+
+b)
+$$
+\mathcal{S}=\{0, 1, 2, 3, 4, 5\}
+$$
+
+c)
+```
+phyper(4, 6, 9, 5)-phyper(1, 6, 9, 5) = 0.7042957
+```
+Thus,
+$$
+P(2\leq X\leq 4)=0.704
+$$
+
+d)
+$$
+E(X)=\frac{4\cdot6}{15}=1.6
+$$
+
+4. 
+a)
+```
+> dnbinom(5, 4, 0.6)
+[1] 0.07431782
+```
+b)
+$$
+E(Y)=\frac{r}{p}=\frac{4}{0.6}=6.6
+$$
