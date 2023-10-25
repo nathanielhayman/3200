@@ -1,0 +1,71 @@
+---
+author: "Nathaniel Hayman"
+date: "10-24-2023"
+output: html_document
+---
+
+1. 
+a) 
+$$
+    \text{Var}(X_1...X_{30})=n\sigma^2=\frac{30}{12}
+$$
+b)
+$$
+    \text{Var}(X_1...X_{30}-Y_1...Y_{30})=\sigma_X^2+\sigma_Y^2=5
+$$
+2. 
+a) 
+$$
+\begin{aligned}
+    &\text{Cov}(aX+b, cY+d)\\
+    &=E[(aX+b)(cY+d)]-E(aX+b)E(cY+d)\\
+    &=E(acXY+abX+bcY+bd)-[aE(X)+b][cE(Y)+d]\\
+    &=acE(XY)+abE(X)+bcE(Y)-aE(X)cE(Y)-abE(X)-bcE(Y)-bd\\
+    &=acE(XY)-acE(X)E(Y)\\
+    &=ac\text{Cov}(XY)
+\end{aligned}
+$$
+b)
+$$
+\begin{aligned}
+    &\text{Corr}(aX+b, cY+d)\\
+    &=\frac{ac\text{Cov}(XY)}{E(X^2)-E(X)^2}
+    &=\frac{ac\text{Cov}(XY)}{E(X)E(Y)}
+\end{aligned}
+$$
+
+3. 
+a)
+$$
+    \begin{aligned}
+        \text{Var}(X_1+Y_1)&=\text{Var}(X+Z+Y+2Z)\\
+        &=\text{Var}(X+Y+3Z)\\
+        &=\frac{11}{12}
+    \end{aligned}
+$$
+b)
+$$
+    \begin{aligned}
+        \text{Corr}(X_1mY_1)&=\frac{\text{Cov}(X_1,Y_1)}{\text{Var}(X_1)\text{Var}(Y_1)}\\
+        &=\frac{\frac{1}{2}[\text{Var}(X_1)+\text{Var}(Y_1)-\text{Var}(X_1-Y_1)]}{\text{Var}(X_1)\text{Var}(Y_1)}\\
+        &=\frac{\frac{1}{2}(\frac{2}{12}+\frac{5}{12})-}{}
+    \end{aligned}
+$$
+4. 
+$$
+    \text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\text{Var}(Y)}}\\
+
+    \begin{aligned}
+        \text{Cov}(X,Y)&=E(XY)-E(X)E(Y)\\
+        &=E(X^3)-E(X)E(X^2)\\
+        &=0-0 \cdot \frac{1}{3}\\
+        &=0
+    \end{aligned}
+$$
+5. a)
+
+`plot(hubble$x, hubble$y)`
+
+`cor(hubble$x, hubble$y)` $\implies 0.83$, which is a positive relationship
+
+The further from the earth, the faster the galaxies move
