@@ -5,6 +5,7 @@ Subsection Exercises for "Elementary to Intermediate Statistics and Data Analysi
 ## Assignment 9
 
 1. a)
+
 $$
 \text{Assuming $X_1...X_n\sim N(\mu, \theta)$,}\\
 $$
