@@ -84,7 +84,13 @@ a)
 
 $$
 \text{Assuming $X_1...X_n$ are iid $N(\mu, \sigma^2)$}\\
+$$
+
+$$
 t_{n-1,\alpha/2}=t_{49,0.1}=\texttt{qt(0.9, 49)}=1.299069\\
+$$
+
+$$
 \mu \plusmn t_{n-1,\alpha/2}\frac{S}{\sqrt{n}}=\mu \plusmn (1.299069)\frac{18}{\sqrt{50}}
 $$
 
