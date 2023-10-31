@@ -7,15 +7,25 @@ Subsection Exercises for "Elementary to Intermediate Statistics and Data Analysi
 1. a)
 $$
 \text{Assuming $X_1...X_n\sim N(\mu, \theta)$,}\\
-\quad\\
+$$
+
+$$
 \mu_1=E(X_i)=\mu;\quad\mu_2=E(X_i^2)=\text{Var}(X_i)+E(X_i)^2=\theta^2+\mu^2\\
-\quad\\
+$$
+
+$$
 \hat\mu_1=\frac{1}{n}\sum_iX_i=\bar{X};\quad\hat\mu_2=\frac{1}{n}\sum_iX_i^2\\
-\quad\\
+$$
+
+$$
 \begin{aligned}
     \mu_1&=\hat\mu_1\\
     \mu&=\bar{X}\\
-    \quad\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
     \mu_2&=\hat\mu_2\\
     \theta^2+\mu^2&=\frac{1}{n}\sum_iX_i^2\\
     \theta^2+\bar X^2&=\frac{1}{n}\sum_iX_i^2\\
@@ -25,6 +35,7 @@ $$
 $$
 
 b)
+
 $$
 \begin{aligned}
     \text{lik}(\theta)&=\prod_if(x_i|\theta)\\
@@ -35,7 +46,11 @@ $$
     \frac{d\mathscr{L}}{d\theta}&=-\frac{n}{2\theta}-\frac{1}{2\theta^2}\sum_i(x_i-\mu)^2\\
     \frac{d\mathscr{L}}{d\theta}&=0\\
     \theta&=-\frac{1}{n}\sum_i(x_i-\mu)^2\\
-    \quad\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
     \text{lik}(\mu)&=\prod_if(x_i|\theta)\\
     &=n\log{\frac{1}{\sqrt{2\pi\theta}}}-\frac{1}{2\theta}\sum_i(x_i-\mu)^2\\
     &=n\log{\frac{1}{\sqrt{2\pi\theta}}}-\frac{1}{2\theta}\left[n\mu^2+\sum_ix_i^2-2\mu x_i\right]\\
@@ -44,13 +59,15 @@ $$
     2n\mu^2&=-\sum_ix_i^2-2x_i\\
     \mu&=\sqrt{\frac{-\sum_ix_i^2-2x_i}{2n}}
 \end{aligned}
-
 $$
 
 2.
+
 $$
 X_1...X_n\sim \text{Exp}(\lambda)\\
-\quad\\
+$$
+
+$$
 \begin{aligned}
     \text{lik}(\lambda)&=\prod_i\lambda e^{-\lambda x_i}\\
     &=\sum_i\log{(\lambda e^{-\lambda x_i})}\\
@@ -63,6 +80,7 @@ $$
 
 3.
 a)
+
 $$
 \text{Assuming $X_1...X_n$ are iid $N(\mu, \sigma^2)$}\\
 t_{n-1,\alpha/2}=t_{49,0.1}=\texttt{qt(0.9, 49)}=1.299069\\
@@ -74,11 +92,17 @@ b) The 90% confidence interval would be wider because $L \propto MOE$
 c) Yes, this is the correct interpretation
 
 4. 
+
 $$
 \hat p \plusmn z_{\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}\\
-\quad\\
+$$
+
+$$
 z_{\alpha/2}=\texttt{qnorm(0.99, 0, 1)}=2.326348\\
 \hat p(1-\hat p) = 0.08(1-0.08) = 0.0736\\
-\quad\\
+$$
+
+$$
 \hat p \plusmn 0.0050203
 $$
+
