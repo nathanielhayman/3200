@@ -1,0 +1,31 @@
+---
+author: "Nathaniel Hayman"
+date: "11-7-2023"
+output: html_document
+---
+
+1. a)
+
+$$
+\bar X \plusmn t_{n-1,\alpha/2}\frac{S}{\sqrt{n}}\\
+\quad\\
+210 \plusmn \texttt{qt(0.2, 49)}\frac{18}{\sqrt{50}}
+$$
+
+b)
+
+Yes, increasing $\alpha$ must necessarily increase the return value of $\texttt{qt}$ and thus the confidence interval
+
+c)
+
+No, we are 80% confident that a given breaking strength measurement will fall within the interval
+
+2. a
+
+$$
+\hat p \plusmn z_{\alpha/2}\sqrt{\frac{\hat p (1-\hat p)}{n}}\\
+\quad\\
+\frac{40}{500}\plusmn\texttt{qnorm(1-0.98/2, 0, 1)}\sqrt{\frac{\frac{40}{500}(1-\frac{40}{500})}{500}}\\
+\quad\\
+0.08 \plusmn 0.02822465
+$$
